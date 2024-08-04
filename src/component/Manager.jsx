@@ -60,43 +60,7 @@ const Manager = () => {
     }
   };
 
-  // const savePassword = async () => {
-  //   if (form.site > 3 && form.username > 3 && form.password > 3) {
-  //     const newPassword = { ...form, id: uuidv4() };
-
-  //     setPasswordArray([...passwordArray, newPassword]);
-  //     await fetch("http://localhost:3000/", {
-  //       method: "POST",
-  //       headers: { "Content-Type": "application/json" },
-  //       body: JSON.stringify(newPassword)
-  //     });
-
-  //     setForm({ site: "", username: "", password: "" });
-
-  //     toast('Password saved!', {
-  //       position: "top-right",
-  //       autoClose: 5000,
-  //       hideProgressBar: false,
-  //       closeOnClick: true,
-  //       pauseOnHover: true,
-  //       draggable: true,
-  //       progress: undefined,
-  //       theme: "dark",
-  //     });
-  //   } else {
-  //     toast('Error: Password not saved!', {
-  //       position: "top-right",
-  //       autoClose: 5000,
-  //       hideProgressBar: false,
-  //       closeOnClick: true,
-  //       pauseOnHover: true,
-  //       draggable: true,
-  //       progress: undefined,
-  //       theme: "dark",
-  //     });
-  //   }
-  // };
-
+  
   const savePassword = async () => {
     // Validate input length
     if (form.site.length > 3 && form.username.length > 3 && form.password.length > 3) {
